@@ -1,0 +1,3 @@
+webtest
+nose
+pypandoc
