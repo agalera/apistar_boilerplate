@@ -7,4 +7,5 @@ WORKDIR apistar
 COPY . .
 RUN pip3 install -r requirements.txt
 EXPOSE 5000
+#ENTRYPOINT bash
 ENTRYPOINT cd exampleapp; apistar run --port=5000 --host="0.0.0.0"
