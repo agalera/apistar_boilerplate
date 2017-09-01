@@ -7,9 +7,10 @@ Proof of concept
 - docker ready
 - mongodb ready
 - nginx ready
+- jwt
 
 # TODO
-- jwt
 - Refactor docker scripts
 - mode production (gunicorn + meinheld)
 - All exceptions in json format
+- Issue doc: https://github.com/encode/apistar/issues/269

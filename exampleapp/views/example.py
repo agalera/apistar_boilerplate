@@ -1,8 +1,9 @@
 from models.example import ExampleModel
+from modules.auth import UserModel as User
 
 
-def welcome():
-    return {'hello': 'worldz', 'example_count': ExampleModel.objects.count()}
+def welcome(user: User, name):
+    return {'hello': user.username}
 
-def test_orm_exception():
+def test_orm_exception(token: User):
     ExampleModel(title="asdasd").save()

@@ -4,6 +4,6 @@ from apistar import Include, Route
 
 
 routes = [
-    Route('/', 'GET', welcome),
+    Route('/{name}', 'GET', welcome),
     Route('/test_orm', 'GET', test_orm_exception),
 ]
